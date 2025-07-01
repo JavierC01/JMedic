@@ -3,26 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/LoginFragment">
+    app:startDestination="@id/HomeScreenFragment">
+
+    <fragment
+        android:id="@+id/HomeScreenFragment"
+        android:name="com.unal.jmedic.ui.HomeScreen.HomeScreenFragment"
+        android:label="HomeScreen"
+        tools:layout="@layout/fragment_home_screen">
+        <action
+            android:id="@+id/action_HomeScreenFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_HomeScreenFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.unal.jmedic.ui.Register.RegisterFragment"
+        android:label="Registro"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_RegisterFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/LoginFragment"
         android:name="com.unal.jmedic.ui.Login.LoginFragment"
-        android:label="@string/first_fragment_label"
+        android:label="Login"
         tools:layout="@layout/fragment_login">
-
         <action
             android:id="@+id/action_LoginFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment" />
+            app:destination="@+id/HomeFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/HomeFragment"
         android:name="com.unal.jmedic.ui.Home.HomeFragment"
-        android:label="@string/Home_fragment_label"
-        tools:layout="@layout/fragment_home">
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
 </navigation>
