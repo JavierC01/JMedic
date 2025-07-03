@@ -34,7 +34,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
         binding = FragmentLoginBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        EditText Textcedula = binding.InputCedula;
+        EditText Textcedula = binding.Inputcedula;
         EditText Textpassword = binding.InputPassword;
         Button button = binding.loginbttn;
 

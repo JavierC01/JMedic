@@ -21,14 +21,14 @@
             android:padding="32dp"
             android:layout_marginTop="150dp">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_emoji_people_24"/>
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/logo"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:text="JMedic's"
+                android:text="Mi Casa Segura"
                 android:textColor="@color/black"
                 android:textSize="32sp"
                 android:textStyle="bold"/>

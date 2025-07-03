@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="Bienvenido @user a JMedic's"
+            android:text="Bienvenido @user"
             android:textColor="@color/Primario_Dark"
             android:textSize="20dp"
             android:textStyle="italic"

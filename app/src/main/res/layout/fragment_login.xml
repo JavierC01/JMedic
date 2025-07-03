@@ -8,9 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.7"
-        android:background="@color/Primario">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,16 +19,16 @@
             android:padding="28dp">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:importantForAccessibility="no"
-                android:src="@drawable/baseline_emoji_people_24" />
+                android:src="@drawable/logo" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:text="JMedic's"
+                android:text="Mi Casa Segura"
                 android:textColor="@color/black"
                 android:textSize="32sp"
                 android:textStyle="bold"
@@ -50,12 +48,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="30dp">
+        android:padding="30dp"
+        android:background="@color/Primario">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bienvenido a JMedic's"
+            android:text="Bienvenido"
             android:textColor="@color/Primario_Dark"
             android:textSize="30dp"/>
 
@@ -71,10 +70,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cedula de ciudadania"
+            android:text="Correo electronico"
             android:alpha="0.7"/>
         <EditText
-            android:id="@+id/InputCedula"
+            android:id="@+id/InputCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
